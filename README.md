@@ -1,16 +1,16 @@
 # week5
 ### Heading 要求⼆：建立資料庫和資料表
->CREATE TABLE member(id INT PRIMARY KEY AUTO_INCREMENT, name VARCHAR(255) NOT NULL ,username VARCHAR(255) NOT NULL ,password VARCHAR(255) NOT NULL ,follower_count INT UNSIGNED NOT NULL DEFAULT 0, time DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP);
+>CREATE TABLE member(id INT PRIMARY KEY AUTO_INCREMENT, name VARCHAR(255) NOT NULL ,username VARCHAR(255) NOT NULL ,password VARCHAR(255) NOT NULL ,follower_count INT UNSIGNED NOT NULL DEFAULT 0, time DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP);<br>
 >![image](https://user-images.githubusercontent.com/111477348/196713725-b11d322a-66ed-44ab-8665-d6125ee5c0f6.png)
 
 ### Heading 要求三：SQL CRUD
 ● 使⽤ INSERT 指令新增⼀筆資料到 member 資料表中，這筆資料的 username 和
 password 欄位必須是 test。接著繼續新增⾄少 4 筆隨意的資料。
->INSERT INTO member(id,name,username,password,follower_count,time) VALUES (1,"Tom","test","test",37, '2022-10-19 00:40:35');
-![image](https://user-images.githubusercontent.com/111477348/196717182-f67e1bf3-cabe-4d39-9f9a-ab6b1ea5ac83.png)
->INSERT INTO member(id,name,username,password,follower_count,time) VALUES (2,"Mick","mick02","1234",27,'2022-10-19 01:20:25');
->INSERT INTO member(id,name,username,password,follower_count,time) VALUES (3,"Eric","eric03","2468",75,'2022-10-19 07:50:05');
->INSERT INTO member(id,name,username,password,follower_count,time) VALUES (4,"Mandy","mandy04","1357",63,'2022-10-19 09:20:45');
+>INSERT INTO member(id,name,username,password,follower_count,time) VALUES (1,"Tom","test","test",37, '2022-10-19 00:40:35');<br>
+![image](https://user-images.githubusercontent.com/111477348/196717182-f67e1bf3-cabe-4d39-9f9a-ab6b1ea5ac83.png)<br>
+>INSERT INTO member(id,name,username,password,follower_count,time) VALUES (2,"Mick","mick02","1234",27,'2022-10-19 01:20:25');<br>
+>INSERT INTO member(id,name,username,password,follower_count,time) VALUES (3,"Eric","eric03","2468",75,'2022-10-19 07:50:05');<br>
+>INSERT INTO member(id,name,username,password,follower_count,time) VALUES (4,"Mandy","mandy04","1357",63,'2022-10-19 09:20:45');<br>
 >INSERT INTO member(id,name,username,password,follower_count,time) VALUES (5,"Zoe","zoe05","6789",13,'2022-10-19 10:07:27');
 
 ● 使⽤ SELECT 指令取得所有在 member 資料表中的會員資料。
@@ -20,7 +20,7 @@ password 欄位必須是 test。接著繼續新增⾄少 4 筆隨意的資料。
 ● 使⽤ SELECT 指令取得所有在 member 資料表中的會員資料，並按照 time 欄位，由
 近到遠排序。
 -因一開始的隨機資料的時間為順序的時間，所以再新增兩列資料去做測試。
->INSERT INTO member(name,username,password,follower_count,time) VALUES ("Leo","leo06","3333",56,'2022-10-19 03:05:27');
+>INSERT INTO member(name,username,password,follower_count,time) VALUES ("Leo","leo06","3333",56,'2022-10-19 03:05:27');<br>
 >INSERT INTO member(name,username,password, time) VALUES ("Sam","sam07","5555",'2022-10-19 08:13:16');
 >![image](https://user-images.githubusercontent.com/111477348/196724588-cb6130a1-c984-4931-8a25-42d2e9b10763.png)
 
