@@ -1,9 +1,9 @@
 # week5
-要求⼆：建立資料庫和資料表
+### Heading 要求⼆：建立資料庫和資料表
 >CREATE TABLE member(id INT PRIMARY KEY AUTO_INCREMENT, name VARCHAR(255) NOT NULL ,username VARCHAR(255) NOT NULL ,password VARCHAR(255) NOT NULL ,follower_count INT UNSIGNED NOT NULL DEFAULT 0, time DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP);
 >![image](https://user-images.githubusercontent.com/111477348/196713725-b11d322a-66ed-44ab-8665-d6125ee5c0f6.png)
 
-要求三：SQL CRUD
+### Heading 要求三：SQL CRUD
 ● 使⽤ INSERT 指令新增⼀筆資料到 member 資料表中，這筆資料的 username 和
 password 欄位必須是 test。接著繼續新增⾄少 4 筆隨意的資料。
 >INSERT INTO member(id,name,username,password,follower_count,time) VALUES (1,"Tom","test","test",37, '2022-10-19 00:40:35');
@@ -45,7 +45,7 @@ password 欄位必須是 test。接著繼續新增⾄少 4 筆隨意的資料。
 >UPDATE member SET name=’ test2’ WHERE username=’ test’;
 >![image](https://user-images.githubusercontent.com/111477348/196725372-5ff32b2a-f08d-4f8f-b4ba-092ed4bdc27a.png)
 
-要求四：SQL Aggregate Functions
+### Heading 要求四：SQL Aggregate Functions
 ● 取得 member 資料表中，總共有幾筆資料 ( 幾位會員 )。
 >SELECT COUNT(id) FROM member;
 >![image](https://user-images.githubusercontent.com/111477348/196725564-0ff1f2ac-aa1d-4d76-a350-fe317a2f106f.png)
