@@ -47,15 +47,15 @@ password 欄位必須是 test。接著繼續新增⾄少 4 筆隨意的資料。
 
 ### Heading 要求四：SQL Aggregate Functions
 ● 取得 member 資料表中，總共有幾筆資料 ( 幾位會員 )。
->SELECT COUNT(id) FROM member;
+>SELECT COUNT(id) FROM member;<br>
 >![image](https://user-images.githubusercontent.com/111477348/196725564-0ff1f2ac-aa1d-4d76-a350-fe317a2f106f.png)
 
 ● 取得 member 資料表中，所有會員 follower_count 欄位的總和。
->SELECT SUM(follower_count) FROM member;
+>SELECT SUM(follower_count) FROM member;<br>
 >![image](https://user-images.githubusercontent.com/111477348/196725652-c55ed03f-5e1e-4fe0-9be7-e2d27b07f9bc.png)
 
 ● 取得 member 資料表中，所有會員 follower_count 欄位的平均數。
->SELECT AVG(follower_count) FROM member;
+>SELECT AVG(follower_count) FROM member;<br>
 >![image](https://user-images.githubusercontent.com/111477348/196725726-2e677c79-cb12-452c-90a9-9caf58bf3845.png)
 
 
